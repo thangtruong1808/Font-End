@@ -6,3 +6,7 @@ header h1 {
 body {
     background-color: yellowgreen;
 }
+
+p {
+    text-transform: capitalize;
+}
