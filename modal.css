@@ -1,0 +1,75 @@
+/* (8) */
+
+
+/* Use CSS to style the link as a button */
+
+.button {
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: lightgrey;
+    padding: 0.25em;
+    /* Creates spacing around the text */
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+
+/* Use CSS to style the window */
+
+.window {
+    /* apply style to HTML elements having window as class name */
+    display: none;
+    /* (9) */
+    z-index: 2;
+    /* (9) */
+    position: fixed;
+    /* (9) */
+    top: 50%;
+    /* (10) */
+    left: 50%;
+    /* (10) */
+    margin-top: -5em;
+    /* (10) */
+    margin-left: -11em;
+    /* (10) */
+    background-color: blue;
+    /* (11) */
+    border-radius: 5px;
+    /* (11) */
+    padding: 5px;
+    /* (11) */
+    width: 22em;
+    /* (11) */
+    height: 10em;
+    /* (11) */
+}
+
+
+/* set up a transparent pane on the screen, preventing the user from clicking on any
+            elements at layer 0 on the screen */
+
+#scrnOverlay {
+    visibility: hidden;
+    /* (12) */
+    z-index: 1;
+    /* (12) */
+    /* use layer 1 to overlay
+            everything in layer 0 */
+    position: fixed;
+    /* (13) */
+    /* Block out the whole screen */
+    top: 0;
+    /* (13) */
+    bottom: 0;
+    /* (13) */
+    COS10005 - Web Development Lab 08 Page 6 left: 0;
+    /* (13) */
+    right: 0;
+    /* (13) */
+    background-color: grey;
+    /* (14) */
+    opacity: 0.5;
+    /* (14) */
+}

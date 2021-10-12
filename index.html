@@ -2,24 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web development" />
+    <meta name="keywords" content="Registration Form" />
+    <meta name="author" content="put your name here" />
+    <link rel="stylesheet" href="./desktop.css>">
+    <link rel="stylesheet" href="./modal.css">
     <script src="./Myscript.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Web Development Registration Form</title>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to JavaScript by Thang Truong</h1>
-        <p>
-            Added another branch as Crazy color
-        </p>
+    <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+        <!--Add the [-]/[+] collapse/expand content_________-->
+        <fieldset>
+            <legend>Account Information</legend>
+            <div class="textinput">
+                <label for="sid">User ID</label>
+                <input id="sid" type="text" name="sid" />
+            </div>
+            <div class="textinput">
+                <label for="pwd1">Password</label>
+                <input id="pwd1" type="password" name="pwd1" />
+            </div>
+            <div class="textinput">
+                <label for="pwd2">Retype Password</label>
+                <input id="pwd2" type="password" name="pwd2" />
+            </div>
+        </fieldset>
 
-        <p>Added another line </p>
-        <p> Added Final line</p>
-    </header>
+        <!--Add the [-]/[+] collapse/expand content_________-->
+
+        <fieldset>
+            <legend>User Information</legend>
+            <div class="textinput">
+                <label for="uname">Name</label>
+                <input id="uname" type="text" name="uname" />
+            </div>
+            <div class="radioinput">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input id="genm" type="radio" name="gender" value="M" />
+                    <label for="genm">Male</label>
+                    <input id="genf" type="radio" name="gender" value="F" />
+                    <label for="genf">Female</label>
+                </fieldset>
+            </div>
+        </fieldset>
+        <div class="buttoninput">
+            <input type="submit" value="Test Registration Form" />
+        </div>
+    </form>
 </body>
 
 </html>
