@@ -57,7 +57,9 @@ function validate() {
 
 /* write the function toggle() that collapse/expand a section*/
 function toggle() {
+    //$(this).parent().next().slideToggle();
     $(this).parent().next().slideToggle();
+    //$(this).toggle(1000);
     if ($(this).html() == "[-]") { /* Update the symbol on the "button" */
         $(this).html("[+]");
     } else { /* [-] <-> [+] */
